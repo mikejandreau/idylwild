@@ -1,31 +1,26 @@
 // Scrollup
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+
 .navbar-inner {
+  height: $navbar-height;
+
   @include laptop {
     width: 80%;
     max-width: 960px;
     margin: 0 auto;
-    height: 6.5rem;
   }
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: 999px) {
   .navbar-list {
     background: #fff;
     border-bottom: 1px solid #eee;
-    // border-top: none;
     margin-top: 0;
-    position: relative;
-    top: 6.5rem;
-    // text-align: center;
-    right: 0;
-
-
+    position: absolute;
+    top: $navbar-height;
     width: 100%;
-    // left: 50%;
-    // margin-left: -500px;
   }
 
   // .navbar {
@@ -55,12 +50,12 @@
         overflow: hidden;
         max-height: 0;
 
-        @include laptop {
-          max-height: none;
-        }
-
         &.active-menu {
           max-height: 15em;
+        }
+
+        @include laptop {
+          max-height: none;
         }
     }
 
@@ -94,11 +89,13 @@
 
 
 
-.navbar {  display: block;
+.navbar,
+.navbar-spacer {  
+  display: block;
   position: relative;
   z-index: 100;
   width: 100%;
-  height: 6.5rem;
+  height: $navbar-height;
   background: #fff;
   z-index: 99;
   border-top: 1px solid #eee;
@@ -106,8 +103,11 @@
   // transition: .3s;
 }
 
+// .navbar {
+//   overflow: visible;
+// }
+
 .navbar-spacer {
-  @extend .navbar;
   display: none;
 }
 
@@ -131,14 +131,22 @@
   letter-spacing: .2rem;
   margin: 0;
   text-decoration: none;
-  line-height: 6.5rem;
+  line-height: $navbar-height;
   color: #222; 
+
+  &.active {
+    color: #33C3F0; 
+  }
 }
 
 .title {
   @extend .navbar-link;
   position: absolute;
-  left: 10%;
+  left: 7.5%;
+
+  @include phablet {
+    left: 10%;
+  }
 
   @include laptop {
     position: relative;
@@ -146,17 +154,15 @@
   }
 }
 
-.navbar-link.active {
-  color: #33C3F0; 
+.has-docked-nav {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0; 
+  }
+  .navbar-spacer {
+    display: block;
+  }
 }
 
-.has-docked-nav .navbar {
-  position: fixed;
-  top: 0;
-  left: 0; 
-}
 
-.has-docked-nav .navbar-spacer {
-  display: block;
-  // background: rgba(0,0,255,0.5); 
-}
