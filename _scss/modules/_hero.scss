@@ -1,0 +1,56 @@
+// Hero
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.hero {
+  // background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./img/hero-home.jpg');
+  // background-image: url(https://dl.dropboxusercontent.com/u/60183450/featured01.jpg);
+  background-image: url(https://dl.dropboxusercontent.com/u/60183450/values-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 5em 0;
+}
+
+
+
+
+.value {
+  text-align: center;
+}
+.value-prop {
+  margin-top: 1rem; }
+.value-props {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+.value-img {
+  display: block;
+  text-align: center;
+  margin: 2.5rem auto 0; }
+
+.values {
+  background-image: url('https://dl.dropboxusercontent.com/u/60183450/values-bg.jpg');
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.value-multiplier { 
+  margin-bottom: .5rem;
+  color: #11DFC7;
+}
+.value-heading {
+  margin-bottom: .3rem;
+}
+.value-description {
+  opacity: .8;
+  font-weight: 300;
+}
+
+
+
+

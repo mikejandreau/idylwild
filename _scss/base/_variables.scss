@@ -2,11 +2,20 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // Breakpoints
-$bp-larger-than-mobile    : "min-width: 400px" !default;
-$bp-larger-than-phablet   : "min-width: 550px" !default;
-$bp-larger-than-tablet    : "min-width: 750px" !default;
+$bp-larger-than-mobile    : "min-width: 480px" !default;
+$bp-larger-than-phablet   : "min-width: 640px" !default;
+$bp-larger-than-tablet    : "min-width: 800px" !default;
 $bp-larger-than-desktop   : "min-width: 1000px" !default;
 $bp-larger-than-desktophd : "min-width: 1200px" !default;
+
+// Responsive breakpoints
+$width_mobile: 480px;
+$width_phablet: 640px;
+$width_tablet: 800px;
+$width_laptop: 1000px;
+$width_desktop: 1200px;
+
+
 
 // Colors
 $light-grey: #e1e1e1 !default;
@@ -30,3 +39,12 @@ $column-margin: 4% !default; // space between columns
 
 // Misc
 $global-radius: 4px !default;
+
+
+$hamburger_width: 3rem;       // width of button area
+$hamburger_height: 6.5rem;      // height of button area
+$hamburger_bar: .2rem;        // thickness of button bars
+$hamburger_pad: 0;       // left/right padding between button area and bars.
+$hamburger_bar_space: .5rem;     // spacing between button bars
+
+$transistion_duration: .3s;

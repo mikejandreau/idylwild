@@ -1,0 +1,117 @@
+// Hamburger
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.hamburger {
+  display: block;
+  // float: right;
+  position: absolute;
+  top: 0;
+  right: 10%;
+  z-index: 9000;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: $hamburger_width;
+  height: $hamburger_height;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include laptop {
+    display: none;
+  }
+
+  // @include laptop {
+  //  display: none;
+  // }
+
+  span {
+    display: block;
+    position: absolute;
+    top: ($hamburger_height / 2) - ($hamburger_bar / 2);
+    left: $hamburger_pad;
+    right: $hamburger_pad;
+    height: $hamburger_bar;
+    background-color: $font-color;
+    transition-duration: $transistion_duration;
+    // transition-delay: $transistion_duration;
+
+    &::before, 
+    &::after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: $hamburger_bar;
+      background-color: $font-color;
+      content: "";
+      transition-duration: $transistion_duration;
+      // transition-delay: $transistion_duration;
+    }
+    
+    &::before {
+      top: -$hamburger_bar - $hamburger_bar_space;
+      transition-property: top, transform;
+    }
+
+    &::after {
+      bottom: -$hamburger_bar - $hamburger_bar_space;
+      transition-property: bottom, transform;
+    }
+  }
+}
+
+/* active state, i.e. menu open */
+
+button.hamburger.is-active {
+  background-color: transparent;
+  // position: fixed;
+  // top: 0;
+  // right: 15px;
+
+}
+
+button.hamburger.is-active span {
+  background-color: lighten($font-color, 15%);
+  transform: rotate(-225deg);
+}
+
+.hamburger.is-active span::before {
+  background-color: lighten($font-color, 15%);
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.hamburger.is-active span::after {
+  background-color: transparent;
+  bottom: 0;
+  transform: rotate(-0deg);
+}
+
+.hamburger.is-active span::before,
+.hamburger.is-active span::after {
+  transition: $transistion_duration;
+  // transition-delay: $transistion_duration;
+}
+
+button.hamburger,
+button.hamburger:hover,
+button.hamburger:focus {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+
+
+

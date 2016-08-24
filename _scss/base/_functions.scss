@@ -1,12 +1,5 @@
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/9/2014
-* Sass Version by Seth Coelen https://github.com/whatsnewsaes
-*/
+// Grid calculation
+//––––––––––––––––––––––––––––––––––––––––––––––––––
 
 @function grid-column-width($n) {
   @return $column-width * $n - ($column-margin*($total-columns - $n)/$total-columns);
@@ -15,3 +8,15 @@
 @function grid-offset-length($n) {
   @return grid-column-width($n) + $column-margin;
 }
+
+
+// Media queries - @include mobile { selector: style; }
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin mobile   { @media (min-width: #{$width_mobile})  { @content; } }
+@mixin phablet  { @media (min-width: #{$width_phablet}) { @content; } }
+@mixin tablet   { @media (min-width: #{$width_tablet})  { @content; } }
+@mixin laptop   { @media (min-width: #{$width_laptop})  { @content; } }
+@mixin desktop  { @media (min-width: #{$width_desktop}) { @content; } }
+@mixin hdtv     { @media (min-width: #{$width_hdtv})    { @content; } }
+@mixin nomobile { @media (max-width: #{$hidden_mobile}) { @content; } }
