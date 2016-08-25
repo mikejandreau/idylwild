@@ -41,11 +41,11 @@ $column-margin: 4% !default; // space between columns
 $global-radius: 4px !default;
 $navbar-height: 6.5rem !default;
 
-$hamburger_width: 3rem;       // width of button area
-$hamburger_height: 6.5rem;      // height of button area
-$hamburger_bar: .2rem;        // thickness of button bars
-$hamburger_pad: 0;       // left/right padding between button area and bars.
-$hamburger_bar_space: .5rem;     // spacing between button bars
+$navbar-toggle-width: 3rem;       // width of button area
+$navbar-toggle-height: 6.5rem;      // height of button area
+$navbar-toggle-bar: .2rem;        // thickness of button bars
+$navbar-toggle-pad: 0;       // left/right padding between button area and bars.
+$navbar-toggle-bar_space: .5rem;     // spacing between button bars
 
 $transistion_duration: .3s;
 

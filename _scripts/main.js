@@ -116,20 +116,20 @@ $(document).ready(function() {
 
   // toggle the hamburger open and closed states
   var removeClass = true;
-  $(".hamburger").click(function () {
-    $(".hamburger").toggleClass('is-active');
-    $(".navbar-list").toggleClass('active-menu');
+  $(".navbar-toggle").click(function () {
+    $(".navbar-toggle").toggleClass('is-active');
+    $(".navbar-menu").toggleClass('active-menu');
     removeClass = false;
   });
 
-  $(".navbar-list").click(function() {
+  $(".navbar-menu").click(function() {
     removeClass = false;
   });
 
   $("html").click(function () {
     if (removeClass) {
-      $(".hamburger").removeClass('is-active');
-      $(".navbar-list").removeClass('active-menu');
+      $(".navbar-toggle").removeClass('is-active');
+      $(".navbar-menu").removeClass('active-menu');
     }
     removeClass = true;
   });
@@ -137,8 +137,8 @@ $(document).ready(function() {
   // disable side nav for laptop and desktop
   $(window).resize(function() {
     if( $(this).width() > 1000 ) {
-      $(".hamburger").removeClass('is-active');
-      $(".navbar-list").removeClass('active-menu');
+      $(".navbar-toggle").removeClass('is-active');
+      $(".navbar-menu").removeClass('active-menu');
     }
   });
 
