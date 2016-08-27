@@ -2,21 +2,19 @@
 @import "base/normalize";
 @import "base/variables";
 @import "base/functions";
-@import "base/base-styles";
+@import "base/elements";
 @import "base/utils";
 @import "base/typography";
 
 // Components
-@import "modules/grid";
-@import "modules/hero";
-@import "modules/navigation";
-@import "modules/footer";
-@import "modules/buttons";
-@import "modules/forms";
-@import "modules/lists";
-@import "modules/tables";
-@import "modules/spacing";
-@import "modules/media-queries";
-
-
+@import "components/grid";
+@import "components/hero";
+@import "components/navigation";
+@import "components/footer";
+@import "components/buttons";
+@import "components/forms";
+@import "components/lists";
+@import "components/tables";
+@import "components/spacing";
+@import "components/media-queries";
 
