@@ -2,16 +2,27 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .hero {
-  // background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://dl.dropboxusercontent.com/u/60183450/values-bg.jpg');
+  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://dl.dropboxusercontent.com/u/60183450/idylwild-bg.jpg');
   // background-image: url(https://dl.dropboxusercontent.com/u/60183450/featured01.jpg);
-  background-image: url(https://dl.dropboxusercontent.com/u/60183450/values-bg.jpg);
+  // background-image: url(https://dl.dropboxusercontent.com/u/60183450/values-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
-  color: #fff;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   padding: 5em 0;
+
+  img {
+    display: block;
+    width: 80%;
+    max-width: 360px;
+    margin: 0 auto 2em;
+  }
+
+  h1 {
+    // color: #4c953c;
+    color: $font-color;
+    // text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
 }
 
 
