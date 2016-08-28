@@ -85,12 +85,12 @@ $(document).ready(function() {
   //   });
   // }
 
-  // function buildSnippets() {
-  //   $codeSnippets.each(function() {
-  //     var newContent = escapeHtml($(this).html())
-  //     $(this).html(newContent)
-  //   })
-  // }
+  function buildSnippets() {
+    $codeSnippets.each(function() {
+      var newContent = escapeHtml($(this).html())
+      $(this).html(newContent)
+    })
+  }
 
   // footer fixing code
   function stickFooter() {
@@ -127,6 +127,14 @@ $(document).ready(function() {
   });
 
   $("html").click(function () {
+    if (removeClass) {
+      $(".navbar-toggle").removeClass('is-active');
+      $(".navbar-menu").removeClass('active-menu');
+    }
+    removeClass = true;
+  });
+
+  $(".navbar-link").click(function () {
     if (removeClass) {
       $(".navbar-toggle").removeClass('is-active');
       $(".navbar-menu").removeClass('active-menu');
