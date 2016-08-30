@@ -5,21 +5,27 @@
   padding: 2.5rem 0;
     font-size: 80%;
     color: #666;
-    background-color: #eee;
-    border-top: 1px solid #e5e5e5;
+    background-color: $navbar-color;
+    border-top: 1px solid #eee;
 
     p {
         margin: 0;
     }
-}
 
-.site-footer .contact {
-    float: left;
-    margin-right: 3em;
-}
+    .designer {
+        text-align: right;
+    }
 
-.site-footer .contact a {
-    color: #8085C1;
+    a {
+        color: $font-color; 
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: lighten($font-color, 15%); 
+        }
+    }
 }
 
 .site-footer .rss {

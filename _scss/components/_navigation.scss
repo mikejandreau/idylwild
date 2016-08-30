@@ -52,7 +52,7 @@
 }
 
 .navbar-menu {
-  background: #fff;
+  background: $navbar-color;
   border-bottom: 1px solid #eee;
   box-sizing: border-box;
   margin-top: 0;
@@ -269,8 +269,11 @@
   position: fixed;
   bottom: 1em;
   right: 1em;
-  background: $primary-color;
-  color: #fff;
+  background: #fff;
+  border: 1px solid $border-color;
+  // color: #fff;
+
+  color: $secondary-color;
   padding: .4em .8em;
   border-radius: 100px;
   text-decoration: none;
@@ -280,7 +283,10 @@
   &:hover,
   &:focus,
   &:active {
-    color: #fff;
+    // color: #fff;
+
+  color: $dark-grey;
+  border-color: lighten($dark-grey, 33.3%);
   }
 }
 

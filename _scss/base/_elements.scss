@@ -24,6 +24,19 @@ a {
   &:hover {
     color: darken($link-color, 5%);
   }
+
+  &.contact-link {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid $link-color;
+    border-radius: $global-radius;
+    padding: 4px 12px;
+    margin-bottom: 4px;
+
+    &:hover {
+      border-color: darken($link-color, 5%);
+    }
+  }
 }
 
 // Misc

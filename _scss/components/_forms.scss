@@ -1,6 +1,12 @@
 // Forms
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+}
+
 textarea,
 select {
   height: 38px;

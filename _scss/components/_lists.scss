@@ -3,6 +3,10 @@
 
 ul {
   list-style: circle inside;
+
+  &.fee-list {
+    list-style: none;
+  }
 }
 
 ol {
