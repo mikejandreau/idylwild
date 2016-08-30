@@ -12,8 +12,10 @@
         margin: 0;
     }
 
-    .designer {
-        text-align: right;
+    @include phablet {
+        .designer {
+            text-align: right;
+        }
     }
 
     a {

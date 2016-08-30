@@ -25,7 +25,7 @@ $secondary-color: lighten($dark-grey, 13.5%) !default;
 $border-color: #bbb !default;
 $link-color: #5b9f48 !default;
 $font-color: #5a5a5a !default;
-$navbar-color: lighten($primary-color, 54%) !default;
+$navbar-color: rgba(252,252,252,0.95) !default;
 
 // Typography
 $font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
