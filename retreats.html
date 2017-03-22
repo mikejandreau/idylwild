@@ -1,0 +1,130 @@
+---
+layout: default
+title: Retreats
+permalink: /retreats/
+---
+
+<div id="retreats">
+	<h2>Upcoming Retreats</h2>
+	<div class="row">
+
+		<div class="six-md column">
+			<p>Thank you for your interest in contacting us at Idylwild Yoga, LLC. Please feel free to use the information on this page to get in touch. We can’t wait to hear from you!</p>
+			<p>Idylwild Yoga<br>
+			406 State Street, Suite 2<br>
+			Ellsworth, Maine 04605</p>
+		</div>
+
+		
+		<div class="six-md column">
+			<form id="retreatsform" class="contact-form" method="POST">
+				<input type="hidden" name="_subject" value="Incoming message from website">
+
+				<div class="row">
+					<div class="six-sm column">
+						<label for="name">First Name *</label>
+						<input type="text" name="name" placeholder="Your first name" required="">
+					</div>
+					<div class="six-sm column">
+						<label for="name">Last Name *</label>
+						<input type="text" name="name" placeholder="Your last name" required="">		
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="twelve column">
+						<label for="address">Address *</label>
+						<input type="text" name="address" placeholder="Your address" required="">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="six-sm column">
+						<label for="city">City *</label>
+						<input type="text" name="city" placeholder="Your city" required="">
+					</div>
+					<div class="three-sm column">
+						<label for="state">State *</label>
+						<input type="text" name="state" placeholder="Your state" required="">
+					</div>
+					<div class="three-sm column">
+						<label for="zip">Zip *</label>
+						<input type="text" name="zip" placeholder="Your zip" required="">		
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="six-sm column">
+						<label for="phone">Phone *</label>
+						<input type="tel" name="phone" placeholder="Your phone number" required="">
+					</div>
+					<div class="six-sm column">
+						<label for="_replyto">Email *</label>
+						<input type="email" name="_replyto" placeholder="Your email" required="">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="six-sm column">
+						<label for="dob">Date of Birth *</label>
+						<input type="date" name="dob" required="">
+					</div>
+					<div class="six-sm column">
+						<fieldset>
+							<legend>Gender</legend>
+							<label for="gender-male">
+								<input id="gender-male" name="gender" type="radio" />
+								<span class="label-body">Male</span>
+							</label>
+							<label for="gender-female">
+								<input id="gender-female" name="gender" type="radio" />
+								<span class="label-body">Female</span>
+							</label>
+						</fieldset>
+					</div>
+				</div>
+
+				<label for="health-concerns">Health Concerns</label>
+				<textarea name="health-concerns" placeholder="Please list any health concerns, physical limitations, allergies, or food sensitivities" required=""></textarea>
+
+				<label for="health-medications">Medications</label>
+				<textarea name="health-medications" placeholder="Please list any medications you currently take" required=""></textarea>
+
+				<label for="health-other">Other Information</label>
+				<textarea name="health-other" placeholder="Please list any other information we should know about you as a participant." required=""></textarea>
+
+				<div class="row">
+					<div class="six-sm column">
+						<label for="emergency-contact">Emergency Contact *</label>
+						<input type="text" name="emergency-contact" placeholder="Contact name" required="">
+					</div>
+					<div class="six-sm column">
+						<label for="emergency-phone">Emergency Phone *</label>
+						<input type="tel" name="emergency-phone" placeholder="Contact phone" required="">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="six-sm column">
+						<label for="signature">E-Signature *</label>
+						<input type="text" name="signature" placeholder="Your full name" required="">
+					</div>
+					<div class="six-sm column">
+						<label for="date">Date *</label>
+						<input type="date" name="date" required="">
+					</div>
+				</div>
+
+				<input type="text" name="_gotcha" style="display:none">
+				<input type="submit" value="Submit">
+				<input type="hidden" name="_next" value="/thanks/">
+
+			</form>
+		</div>
+	</div>
+</div>
+
+<script>
+    var contactform =  document.getElementById('retreatsform');
+    contactform.setAttribute('action', '//formspree.io/' + 'idylwildyoga' + '@' + 'icloud' + '.' + 'com');
+</script>

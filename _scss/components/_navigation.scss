@@ -36,19 +36,29 @@
 .navbar-inner {
   height: $navbar-height;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 0;
   box-sizing: border-box;
+  margin: 0 auto;
 
   @include mobile {
-    width: $container-width-larger-than-mobile;
-    margin: 0 auto;
-    padding: 0;
+    // width: $container-width-mobile;
+    max-width: $width_mobile;
   }
 
   @include phablet {
-    width: $container-width-larger-than-phablet;
-    max-width: 960px;
+    // width: $container-width-phablet;
+    max-width: $width_phablet;
   }
+
+  @include tablet {
+    // width: $container-width-phablet;
+    max-width: $width_tablet;
+  }
+
+  @include laptop {
+    max-width: $container-width;
+  }
+
 }
 
 .navbar-menu {
@@ -65,7 +75,7 @@
   top: $navbar-height;
   top: calc(6.5rem - 1px);
   transition: max-height $transistion_duration ease-out;
-  padding: 0 20px;
+  padding: 0 0;
   overflow: hidden;
   max-height: 0;
 
@@ -73,9 +83,10 @@
     max-height: 15em;
   }
 
-  @include mobile {
-    padding: 0;
-  }
+  // @include mobile {
+  //   padding: 0;
+  // }
+
 
   @include laptop {
     background: transparent;
@@ -87,6 +98,7 @@
     width: auto;
     float: right;
     max-height: none;
+  margin-right: 20px;
   }
 }
 
@@ -98,22 +110,32 @@
   display: block;
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
   float: none;
-  border-top: 1px solid #eee;
+  // border-top: 1px solid #eee;
+  box-sizing: border-box;
 
   @include mobile {
-    width: $container-width-larger-than-mobile;
-    padding: 0;
+    // width: $container-width-mobile;
+    // padding: 0 20px;
+    max-width: $width_mobile;
   }
 
   @include phablet {
-    width: $container-width-larger-than-phablet;
+    // padding: 0;
+    // width: $container-width-phablet;
+    max-width: $width_phablet;
+  }
+
+  @include tablet {
+    // width: $container-width-phablet;
+    max-width: $width_tablet;
   }
 
   @include laptop {
     display: inline-block;
     margin: 0;
+    padding: 0;
     width: auto;
     border: none;
 
@@ -132,6 +154,12 @@
   text-decoration: none;
   line-height: $navbar-height;
   color: $font-color; 
+  display: block;
+  border-top: 1px solid #eee;
+
+  @include laptop {
+    display: inline-block;
+  }
 
   &:hover,
   &:focus,
@@ -147,13 +175,14 @@
   font-weight: 600;
   letter-spacing: .2rem;
   margin: 0;
+  margin-left: 20px;
   line-height: $navbar-height;
   color: $font-color; 
 
   a {
-  color: $secondary-color;
-  text-decoration: none;
-  text-decoration: none;
+    color: $secondary-color;
+    text-decoration: none;
+    text-decoration: none;
   }
 }
 
@@ -180,6 +209,7 @@
   cursor: pointer;
   float: right;
   position: relative;
+  margin-right: 20px;
 
   @include laptop {
     display: none;

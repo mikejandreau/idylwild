@@ -135,6 +135,7 @@ input {
   &[type="text"],
   &[type="tel"],
   &[type="url"],
+  &[type="date"],
   &[type="password"] {
     height: 38px;
     padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
@@ -143,5 +144,36 @@ input {
     border-radius: $global-radius;
     box-shadow: none;
     box-sizing: border-box;
+  }
+}
+
+.cancellation-alert {
+  background-color: $alert-color;
+  color: #fff; 
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.retreat-cta {
+  background-color: $link-color;
+  color: #fff; 
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+
+  small {
+    font-size: 14px;
+  }
+
+  a {
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
   }
 }
