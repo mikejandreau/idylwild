@@ -2,7 +2,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .hero {
-  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://dl.dropboxusercontent.com/u/60183450/idylwild-bg.jpg');
+  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('../../img/idylwild-bg.jpg');
   // background-image: url(https://dl.dropboxusercontent.com/u/60183450/featured01.jpg);
   // background-image: url(https://dl.dropboxusercontent.com/u/60183450/values-bg.jpg);
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@
     color: $font-color;
     // text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
-    background: url(https://dl.dropboxusercontent.com/u/60183450/idylwild-logo2.png);
+    background: url('/img/idylwild-logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,7 +35,7 @@
 
 
 .about-img {
-  background-image: url(https://dl.dropboxusercontent.com/u/60183450/idylwild-mat.jpg);
+  background-image: url(/img/idylwild-mat.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -58,13 +58,7 @@
   text-align: center;
   margin: 2.5rem auto 0; }
 
-.values {
-  background-image: url('https://dl.dropboxusercontent.com/u/60183450/values-bg.jpg');
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-  padding: 5rem 0;
-}
+
 
 .value-multiplier { 
   margin-bottom: .5rem;
